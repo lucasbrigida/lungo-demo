@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lungo</title>
+        <meta name="description" content="">
+        <meta name="author" content="www.mustachebrasil.com">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- iPhone -->
+        <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+        <!-- iPhone (Retina) -->
+        <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+        <!-- iPhone 5 -->
+        <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+        <!-- iPad -->
+        <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+        <!-- iPad (Retina) -->
+        <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <link href="http://cdn.tapquo.com/lungo/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+        <!-- Main Stylesheet -->         
+        <link rel="stylesheet" type="text/css" href="libs/lungojs/lungo.css" />
+        <link rel="stylesheet" type="text/css" href="libs/lungojs/lungo.icon.css" />
+        <link rel="stylesheet" type="text/css" href="libs/lungojs/lungo.icon.brand.css" />
+        <!--<link rel="stylesheet" type="text/css" href="libs/lungojs/theme.lungo.css" />-->
+        <link rel="stylesheet" type="text/css" href="libs/lungojs/theme.yellow.css" />
+        
+        <!-- Phonegap -->
+        <!--<script type="text/javascript" src="cordova-2.7.0.js"></script>-->
+    </head>
+    <body class="app">
+        <!-- Lungo - Dependencies -->
+        <script type="text/javascript" src="libs/quojs/quo.js"></script>
+        <script type="text/javascript" src="libs/lungojs/lungo.js"></script>
+        <!-- Lungo - App -->
+        <script>
+            Lungo.init({
+                name: 'Lungo',
+                resources: [
+                    "views/sections/main.html",
+                    'views/sections/pull.html',
+                    'views/sections/notification.html',
+                    'views/sections/carousel.html',
+                    'views/sections/touchevents.html',
+                    'views/asides/features.html'
+                ]
+            });
+        </script>
+        <script src="js/app.js"></script>
+        <script src="js/events.notification.js"></script>
+        <script src="js/events.touch.js"></script>
+        <script src="js/events.pull.js"></script>
+        <script src="js/events.carousel.js"></script>
+        <script src="js/events.trigger.js"></script>
+    </body>
+</html>
